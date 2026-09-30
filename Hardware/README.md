@@ -1,38 +1,34 @@
-# Hardware 
+# Hardware
 
 ## Mapping
-Conections:
 
-| Atuator | Potentiometer | Servo |
+Connections:
+
+| Actuator | Potentiometer | Servo |
 | --- | --- | --- |
 | Shoulder | GPIO 32 | GPIO 18 |
 | Elbow | GPIO 33 | GPIO 19 |
 | Hand | GPIO 34 | GPIO 21 |
 | Claw | GPIO 35 | GPIO 22 |
 
-## Alimentation and Notes
+## Power Supply and Notes
 
-- Ligue os terminais externos de cada potenciômetro de 10 kΩ a 3,3 V e GND; o cursor que vai ao GPIO indicado passa por um filtro de passa baixa.
-- The Low-Band Filter use one 100uF ceramic Capacitor and one 1kΩ Resistor.
-- CAUTION:dont apply 5 volts in ADC inputs
-- Servos being alimented for the 5v font and more or less 2A .
-- Unify all GNDS in the same local, in my example I used the GND of ESP32.
-- Check the Servos polarity and if is possible, dont conect without confirm the polarity of wires 
-- Dont forget the electrolitic 1000uF capacitor to filter channel the noisy
-- VCC and GND of servo is paralel conectec with a 100uF ceramic capacitor to reduce the Voltage peak
-- To guarantee the servos will not die with some peak of current, it's a good practice put one 3A fuse :). 
+- Connect the outer terminals of the 10kΩ potentiometers to **3.3V** and **GND**. The potentiometer wiper is connected to the GPIO through a **low-pass filter**.
+- The low-pass filter uses one **100 µF ceramic capacitor** and one **1 kΩ resistor**.
+- **CAUTION:** Do not apply **5V** directly to the ESP32 ADC inputs.
+- The servos are powered by a **5V power supply** capable of providing approximately **2A**.
+- Connect all **GNDs** to a common ground. In my setup, I used the ESP32 GND as the common reference.
+- Check the servo polarity before connecting it. If possible, do not power the circuit before confirming the polarity of the wires.
+- Do not forget the **1000 µF electrolytic capacitor** on the servo power rail to help filter voltage fluctuations and electrical noise.
+- The servo **VCC and GND** lines are connected in parallel with a **100 µF ceramic capacitor** to help reduce voltage spikes.
+- To help protect the servos and the circuit from excessive current, it is good practice to use a **3A fuse** :).
 
-
-## How it works?
+## Schematics
 
 <p align="center">
   <img
     src="../media/schematiks.png"
-    alt="Hardware do braço robótico"
+    alt="Robotic Arm Hardware Schematics"
     width="600"
   >
 </p>
-
-    
-    
-
