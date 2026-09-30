@@ -18,7 +18,7 @@ The displayed values represent commanded angles. The project does not measure ac
 
 | Component | Quantity | Specifications / Notes |
 | --- | --- | --- |
-| ESP32 | 1 | ESP32 Dev Module; exact physical module identification pending |
+| ESP32 | 1 | ESP32 |
 | Servo | 4 | SG90 |
 | Potentiometer | 4 | 10 kΩ |
 | Power supply | 1 | 5 V; reported current rating: 1 A ± 0.5 A |
@@ -37,24 +37,19 @@ esp32-robotic-arm/
 │   └── robotic-arm/
 │       └── robotic-arm.ino
 ├── hardware/
-│   └── README.md
+│   ├── README.md
+|   └──components
+|       └──(imgs.png)
 ├── docs/
-│   ├── instalacao.md
-│   ├── funcionamento.md
-│   ├── calibracao.md
-│   ├── validacao.md
-│   └── git-e-evolucao.md
+|
 └── media/
-    └── README.md
 ```
 
 ## Getting Started
 
-1. Review the [wiring and power supply documentation](hardware/README.md).
-2. Set up your development environment using the [installation guide](docs/instalacao.md).
-3. Read the [calibration guide](docs/calibracao.md) before operating the arm.
-4. Perform and record the checks in the [validation guide](docs/validacao.md).
-5. Follow the [Git and GitHub guide](docs/git-e-evolucao.md) to publish the project and maintain its version history.
+1. Review the [wiring,components, schematic and  power supply documentation](Hardware/README.md).
+2. Understand the [firmware](firmware/README.md).
+
 
 The `Joint` class is explained in the [firmware operation guide](docs/funcionamento.md).
 
@@ -64,11 +59,19 @@ The firmware preserves the original control logic. Calibration parameters are no
 
 The 0–180° angle limits and 500–2400 µs pulse widths are firmware settings, not a verified mechanical operating range for the installed SG90 servos.
 
-During initialization, each servo receives a command based on its potentiometer's current position, which may cause immediate movement.
+During initialization, each servo receives a command based on its potentiometers current position, which may cause immediate movement.
 
 ## Roadmap
 
-- [ ] Implement a web server to control the gripper through a web interface.
-- [ ] Calibrate and test each actuator individually.
+- [ ] Read and understand the [schematic](Hardware/README.md).
+- [ ] Make the connections.
+- [ ] Install ARDUINO IDE and **ESP32Servo** Library.
+- [ ] Configure the Arduino to ESP32 Board
+- [ ] Input the [code](firmware/robotic-arm/robotic-arm.ino).
 - [ ] Validate configuration parameters and handle servo attachment failures in the firmware.
-- [ ] Evaluate controlled startup and movement speed limiting.
+- [ ] Be Happy :)
+
+## Next steps
+
+- [ ] Create one online server to control the robotic arm in the internet.
+- [ ] Automatize tasks with pre configured movements.
