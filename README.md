@@ -1,6 +1,6 @@
 # ESP32 Robotic Arm
 
-Manual control of four actuators—shoulder, elbow, hand, and gripper—using potentiometers, an ESP32, and SG90 servos.
+Manual control of four actuators—shoulder, elbow, hand, and claw—using potentiometers, an ESP32, and SG90 servos.
 
 **Status:** Prototype under development. Initial firmware provided by the project author.
 
