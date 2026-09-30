@@ -1,1 +1,0 @@
-##Dedicate from identify components
