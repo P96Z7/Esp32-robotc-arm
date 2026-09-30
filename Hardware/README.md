@@ -27,7 +27,7 @@ Connections:
 
 <p align="center">
   <img
-    src="../media/schematiks.png"
+    src="./schematiks.png"
     alt="Robotic Arm Hardware Schematics"
     width="600"
   >
