@@ -32,3 +32,54 @@ Connections:
     width="600"
   >
 </p>
+
+
+### Components
+#### 100nF Ceramic Capacitor
+- Used to filter vcc
+<p align="center">
+  <img
+    src="../Hardware/components/ceramic.png"
+    alt="ceramic capacitor"
+    width="100"
+  >
+</p>
+
+#### 1000uF Electrolytic Capacitor
+- Used to filter vcc
+<p align="center">
+  <img
+    src="../Hardware/components/electrolytic.png"
+    alt="electrolytic capacitor"
+    width="100"
+  >
+</p>
+
+#### 10KΩ Potentiometer
+- Used to set the input voltage in GPIO
+ <p align="center">
+  <img
+    src="../Hardware/components/potentiometer.png"
+    alt="potentiometer"
+    width="100"
+  >
+</p>
+
+#### Servo
+- In this project I used sg90
+<p align="center">
+  <img
+    src="../Hardware/components/sg90.png"
+    alt="servo"
+    width="100"
+  >
+</p>
+
+#### 1KΩ Resistor
+<p align="center">
+  <img
+    src="../Hardware/components/resistor.png"
+    alt="resistor"
+    width="100"
+  >
+</p>
