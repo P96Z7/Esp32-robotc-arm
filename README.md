@@ -22,8 +22,8 @@ The displayed values represent commanded angles. The project does not measure ac
 | Servo | 4 | SG90 |
 | Potentiometer | 4 | 10 kΩ |
 | Power supply | 1 | 5 V; reported current rating: 1 A ± 0.5 A |
-| Capacitor | 8 | 100 µF |
-| Capacitor | 1 | 1000 nF |
+| Capacitor | 8 | Ceramic 100 µF |
+| Capacitor | 1 | Electrolytic 1000 nF |
 | Resistor | 4 | 1 kΩ |
 
 Servo and potentiometer quantities correspond to the four channels defined in the firmware. The physical assembly still needs to be verified on the bench.
