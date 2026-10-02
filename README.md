@@ -36,8 +36,10 @@ esp32-robotic-arm/
 ├── firmware/
 │   └── robotic-arm/
 │       └── robotic-arm.ino
+|       └── README.md
 ├── hardware/
 │   ├── README.md
+|   ├── schematic.png
 |   └──components
 |       └──(imgs.png)
 |
