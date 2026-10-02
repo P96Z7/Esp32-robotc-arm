@@ -67,7 +67,8 @@ During initialization, each servo receives a command based on its potentiometers
 - [ ] Make the connections.
 - [ ] Install ARDUINO IDE and **ESP32Servo** Library.
 - [ ] Configure the Arduino to ESP32 Board
-- [ ] Input the [code](firmware/robotic-arm/robotic-arm.ino).
+- [ ] Understand the [firmware](firmware/robotic-arm/README.md)
+- [ ] Input the [code](firmware/robotic-arm/robotic-arm.ino) and set max and min values.
 - [ ] Validate configuration parameters and handle servo attachment failures in the firmware.
 - [ ] Be Happy :)
 
