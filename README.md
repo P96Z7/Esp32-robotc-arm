@@ -48,7 +48,7 @@ esp32-robotic-arm/
 ## Getting Started
 
 1. Review the [wiring,components, schematic and  power supply documentation](Hardware/README.md).
-2. Understand the [firmware](firmware/README.md).
+2. Understand the [firmware](firmware/robotic-arm/README.md).
 
 
 The `Joint` class is explained in the [firmware operation guide](docs/funcionamento.md).
