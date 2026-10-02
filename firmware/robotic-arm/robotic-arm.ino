@@ -36,10 +36,14 @@ public:
   Joint(
     int pot,
     int servoP,
-    int adcMinValue = 0,
-    int adcMaxValue = 4095,
+    //0-4095
+    int adcMinValue = 280,
+    int adcMaxValue = 3800,
+    //0-180° 
     int angleMinValue = 0,
     int angleMaxValue = 180,
+    //less=more stable and more slow
+    //plus=more fast and instable
     float alphaValue = 0.15,
     int deadbandValue = 2
   ) {
@@ -58,7 +62,9 @@ public:
   void begin() {
     pinMode(potPin, INPUT);
     analogSetPinAttenuation(potPin, ADC_11db);
+    //20ms control pulse
     servo.setPeriodHertz(50);
+    //sg90 1000-2000
     servo.attach(servoPin, 500, 2400);
     int initialValue = readADC();
     filteredValue = initialValue;
