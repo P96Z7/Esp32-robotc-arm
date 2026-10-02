@@ -40,7 +40,6 @@ esp32-robotic-arm/
 │   ├── README.md
 |   └──components
 |       └──(imgs.png)
-├── docs/
 |
 └── media/
 ```
